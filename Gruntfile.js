@@ -43,9 +43,38 @@ module.exports = function(grunt) {
 
 
 	      }
-	  }
+	  },
 
-  });
+  
+  
+    // Task configuration.
+        jasmine: {
+            all: {
+                src: ['www/js/test.js'],
+                options: {
+                    'vendor': 'http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.1.0.js',
+                    'specs': ['www/js/test-spec.js'],
+                }
+            },
+			istanbul: {
+				src: '<%= jasmine.all.src %>',
+				options: {
+        vendor: '<%= jasmine.all.options.vendor %>',
+        specs: '<%= jasmine.all.options.specs %>',
+        template: require('grunt-template-jasmine-istanbul'),
+        templateOptions: {
+            coverage: 'coverage/json/coverage.json',
+            report: [
+                {type: 'html', options: {dir: 'coverage/html'}},
+                {type: 'text-summary'}
+            ]
+        }
+			}
+		}
+        }
+    });
+
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
 
   // This will automatically load any grunt plugin you install, such as grunt-contrib-less.
   require('load-grunt-tasks')(grunt);
