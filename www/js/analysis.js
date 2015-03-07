@@ -44,12 +44,11 @@ var complexityBuilder =
 	report : function()
 	{
 		console.log(
-		   ("Number of functions {0}\n" + 
-			"Cyclomatic complexity {1}\n" +
-			"Nesting Depth {2}\n" +
-			"Mean Parameters {3}\n" +
-			"Max Parameters {4}\n")
-			.format(complexityBuilder.Functions,complexityBuilder.SimpleCyclomaticComplexity, this.MaxNestingDepth,
+		   ("Cyclomatic complexity {0}\n" +
+			"Nesting Depth {1}\n" +
+			"Mean Parameters {2}\n" +
+			"Max Parameters {3}\n")
+			.format(complexityBuilder.SimpleCyclomaticComplexity, this.MaxNestingDepth,
 			        complexityBuilder.MeanParameterCount, complexityBuilder.MaxParameterCount)
 		);
 	}
@@ -75,6 +74,20 @@ function complexity(filePath)
 				complexityBuilder.Functions++;
 				//complexityBuilder.SimpleCyclomaticComplexity ++;	
 		}
+		
+		// if (node.type === 'VariableDeclaration' && ) 
+		// {
+			// var result= {nestedDepth:0};
+			// visitDepth(node, 0 ,result);
+			
+			// if(result.nestedDepth > complexityBuilder.MaxNestingDepth)
+				// complexityBuilder.MaxNestingDepth = result.nestedDepth;
+				
+				// console.log( "Line : {0} Function: {1} Parameters : {2} Depth: {3}".format(node.loc.start.line,
+				// functionName(node), node.params.length, result.nestedDepth));
+				// complexityBuilder.Functions++;
+				//complexityBuilder.SimpleCyclomaticComplexity ++;	
+		// }
 		
 		if (node.type === 'FunctionDeclaration' || node.type === 'FunctionExpression') 
 		{
