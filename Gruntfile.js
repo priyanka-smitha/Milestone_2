@@ -20,7 +20,7 @@ module.exports = function(grunt) {
   },
 
 	jshint: {
-    all: ['Gruntfile.js','test.js','d3_test.js','d3_test2.js'],
+    all: ['www/js/test.js'],
 	options: {
         reporter: require('jshint-jenkins-checkstyle-reporter'),
         reporterOutput: 'report-jshint-checkstyle.xml'

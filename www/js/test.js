@@ -1,4 +1,5 @@
 var a
+var x=y=z="example";
 var ViewMyModel=function(first,last,email)
 {
 if (first=="Priyanka"){
