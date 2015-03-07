@@ -20,12 +20,12 @@ module.exports = function(grunt) {
   },
 
 	jshint: {
-    all: ['www/js/test.js'],
+    all: ['www/js/test.js','Gruntfile.js', 'www/js/test-spec.js' ],
 	options: {
         reporter: require('jshint-jenkins-checkstyle-reporter'),
         reporterOutput: 'report-jshint-checkstyle.xml'
-    }
-  },
+		}
+	},
 
 	  less: 
 	  {
@@ -63,17 +63,17 @@ module.exports = function(grunt) {
 			istanbul: {
 				src: '<%= jasmine.all.src %>',
 				options: {
-        vendor: '<%= jasmine.all.options.vendor %>',
-        specs: '<%= jasmine.all.options.specs %>',
-        template: require('grunt-template-jasmine-istanbul'),
-        templateOptions: {
-            coverage: 'coverage/json/coverage.json',
-            report: [
-                {type: 'html', options: {dir: 'coverage/html'}},
-				{type: 'cobertura', options: {dir: 'coverage/cobertura'}},
-                {type: 'text-summary'}
-            ]
-        }
+						vendor: '<%= jasmine.all.options.vendor %>',
+						specs: '<%= jasmine.all.options.specs %>',
+						template: require('grunt-template-jasmine-istanbul'),
+						templateOptions: {
+							coverage: 'coverage/json/coverage.json',
+							report: [
+							{type: 'html', options: {dir: 'coverage/html'}},
+							{type: 'cobertura', options: {dir: 'coverage/cobertura'}},
+							{type: 'text-summary'}
+						]
+				}
 			}
 		}
         }
