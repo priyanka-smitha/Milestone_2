@@ -9,8 +9,10 @@ describe("Person Name", function() {
     // expect(target.fullName()).toBe("Priyanka Lovelace");
   // });
   
-  it("Computes wrongName based on firstName and lastName", function() {
+	it("Computes wrongName based on firstName and lastName", function() {
     var target = new ViewMyModel("Ada","Shankaran");
     expect(target.fullName()).toBe("Ada Shankaran");
   });
+  
+  
 });

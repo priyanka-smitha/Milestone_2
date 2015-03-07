@@ -1,3 +1,4 @@
+var a
 var ViewMyModel=function(first,last,email)
 {
 if (first=="Priyanka"){
@@ -13,6 +14,6 @@ else {
 this.lastName=ko.observable(last);
 }
 this.email_id=ko.observable(email);
-this.fullName=ko.computed(function(){return this.firstName() + " " + this.lastName() },this);
+this.fullName=ko.computed(function(){return this.firstName() + " " + this.lastName(); },this);
 };
 
