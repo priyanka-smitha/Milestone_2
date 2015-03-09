@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="9"  lines-covered="9"  line-rate="1"  branches-valid="4"  branches-covered="4"  branch-rate="1"  timestamp="1425769934344" complexity="0" version="0.1">
+<coverage lines-valid="9"  lines-covered="9"  line-rate="1"  branches-valid="4"  branches-covered="4"  branch-rate="1"  timestamp="1425859874207" complexity="0" version="0.1">
 <sources>
 	<source>C:\Users\Smitha\Desktop\DevOps\Milestone_2</source>
 </sources>
@@ -9,23 +9,23 @@
 	<classes>
 		<class name="test.js"  filename="www\js\test.js"  line-rate="1"  branch-rate="1" >
 		<methods>
-			<method name="(anonymous_1)"  hits="3"  signature="()V" >
-				<lines><line number="4"  hits="3" /></lines>
+			<method name="(anonymous_1)"  hits="5"  signature="()V" >
+				<lines><line number="4"  hits="5" /></lines>
 			</method>
-			<method name="(anonymous_2)"  hits="3"  signature="()V" >
-				<lines><line number="19"  hits="3" /></lines>
+			<method name="(anonymous_2)"  hits="5"  signature="()V" >
+				<lines><line number="19"  hits="5" /></lines>
 			</method>
 		</methods>
 		<lines>
 			<line number="4"  hits="1"  branch="false" />
-			<line number="6"  hits="3"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="6"  hits="5"  branch="true"  condition-coverage="100% (2/2)" />
 			<line number="7"  hits="1"  branch="false" />
-			<line number="10"  hits="2"  branch="false" />
-			<line number="12"  hits="3"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="10"  hits="4"  branch="false" />
+			<line number="12"  hits="5"  branch="true"  condition-coverage="100% (2/2)" />
 			<line number="13"  hits="1"  branch="false" />
-			<line number="16"  hits="2"  branch="false" />
-			<line number="18"  hits="3"  branch="false" />
-			<line number="19"  hits="3"  branch="false" />
+			<line number="16"  hits="4"  branch="false" />
+			<line number="18"  hits="5"  branch="false" />
+			<line number="19"  hits="5"  branch="false" />
 		</lines>
 		</class>
 	</classes>

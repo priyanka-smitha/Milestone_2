@@ -48,17 +48,15 @@ module.exports = function(grunt) {
 
 	      }
 	  },
-
-  
-  
     // Task configuration.
         jasmine: {
             all: {
                 src: ['www/js/test.js'],
                 options: {
-                    'vendor': 'http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.1.0.js',
+                    'vendor': ['http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.1.0.js'],
                     'specs': ['www/js/test-spec.js'],
-                }
+				}
+				
             },
 			istanbul: {
 				src: '<%= jasmine.all.src %>',
@@ -89,7 +87,6 @@ grunt.loadNpmTasks('grunt-bower-concat');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-less');
-
 
 grunt.registerTask('package', ['bower_concat','uglify']);
 grunt.registerTask('validate', ['jshint']);

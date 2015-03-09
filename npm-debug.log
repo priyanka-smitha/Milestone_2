@@ -2,179 +2,89 @@
 1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'install',
-1 verbose cli   'karma-jasmine',
-1 verbose cli   'karma-chrome-launcher--save-dev' ]
+1 verbose cli   'quick-check',
+1 verbose cli   '--save-dev' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
 4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 verbose readDependencies using package.json deps
-6 verbose cache add [ 'karma-jasmine', null ]
-7 verbose cache add name=undefined spec="karma-jasmine" args=["karma-jasmine",null]
-8 verbose parsed url { protocol: null,
-8 verbose parsed url   slashes: null,
-8 verbose parsed url   auth: null,
-8 verbose parsed url   host: null,
-8 verbose parsed url   port: null,
-8 verbose parsed url   hostname: null,
-8 verbose parsed url   hash: null,
-8 verbose parsed url   search: null,
-8 verbose parsed url   query: null,
-8 verbose parsed url   pathname: 'karma-jasmine',
-8 verbose parsed url   path: 'karma-jasmine',
-8 verbose parsed url   href: 'karma-jasmine' }
-9 verbose cache add [ 'karma-chrome-launcher--save-dev', null ]
-10 verbose cache add name=undefined spec="karma-chrome-launcher--save-dev" args=["karma-chrome-launcher--save-dev",null]
-11 verbose parsed url { protocol: null,
-11 verbose parsed url   slashes: null,
-11 verbose parsed url   auth: null,
-11 verbose parsed url   host: null,
-11 verbose parsed url   port: null,
-11 verbose parsed url   hostname: null,
-11 verbose parsed url   hash: null,
-11 verbose parsed url   search: null,
-11 verbose parsed url   query: null,
-11 verbose parsed url   pathname: 'karma-chrome-launcher--save-dev',
-11 verbose parsed url   path: 'karma-chrome-launcher--save-dev',
-11 verbose parsed url   href: 'karma-chrome-launcher--save-dev' }
-12 silly lockFile df56d5e8-karma-jasmine karma-jasmine
-13 verbose lock karma-jasmine C:\Users\Smitha\AppData\Roaming\npm-cache\df56d5e8-karma-jasmine.lock
-14 silly lockFile d60e6a28-karma-chrome-launcher-save-dev karma-chrome-launcher--save-dev
-15 verbose lock karma-chrome-launcher--save-dev C:\Users\Smitha\AppData\Roaming\npm-cache\d60e6a28-karma-chrome-launcher-save-dev.lock
-16 silly lockFile df56d5e8-karma-jasmine karma-jasmine
-17 silly lockFile df56d5e8-karma-jasmine karma-jasmine
-18 silly lockFile d60e6a28-karma-chrome-launcher-save-dev karma-chrome-launcher--save-dev
-19 silly lockFile d60e6a28-karma-chrome-launcher-save-dev karma-chrome-launcher--save-dev
-20 verbose addNamed [ 'karma-jasmine', '' ]
-21 verbose addNamed [ null, '*' ]
-22 silly lockFile a9316641-karma-jasmine karma-jasmine@
-23 verbose lock karma-jasmine@ C:\Users\Smitha\AppData\Roaming\npm-cache\a9316641-karma-jasmine.lock
-24 verbose addNamed [ 'karma-chrome-launcher--save-dev', '' ]
-25 verbose addNamed [ null, '*' ]
-26 silly lockFile 319c51d4-karma-chrome-launcher-save-dev karma-chrome-launcher--save-dev@
-27 verbose lock karma-chrome-launcher--save-dev@ C:\Users\Smitha\AppData\Roaming\npm-cache\319c51d4-karma-chrome-launcher-save-dev.lock
-28 silly addNameRange { name: 'karma-jasmine', range: '*', hasData: false }
-29 silly addNameRange { name: 'karma-chrome-launcher--save-dev',
-29 silly addNameRange   range: '*',
-29 silly addNameRange   hasData: false }
-30 verbose request where is /karma-jasmine
-31 verbose request registry https://registry.npmjs.org/
-32 verbose request id 0d742378e07fdbf9
-33 verbose url raw /karma-jasmine
-34 verbose url resolving [ 'https://registry.npmjs.org/', './karma-jasmine' ]
-35 verbose url resolved https://registry.npmjs.org/karma-jasmine
-36 verbose request where is https://registry.npmjs.org/karma-jasmine
-37 info trying registry request attempt 1 at 18:06:51
-38 http GET https://registry.npmjs.org/karma-jasmine
-39 verbose request where is /karma-chrome-launcher--save-dev
-40 verbose request registry https://registry.npmjs.org/
-41 verbose url raw /karma-chrome-launcher--save-dev
-42 verbose url resolving [ 'https://registry.npmjs.org/',
-42 verbose url resolving   './karma-chrome-launcher--save-dev' ]
-43 verbose url resolved https://registry.npmjs.org/karma-chrome-launcher--save-dev
-44 verbose request where is https://registry.npmjs.org/karma-chrome-launcher--save-dev
-45 info trying registry request attempt 1 at 18:06:51
-46 http GET https://registry.npmjs.org/karma-chrome-launcher--save-dev
-47 http 200 https://registry.npmjs.org/karma-jasmine
-48 silly registry.get cb [ 200,
-48 silly registry.get   { date: 'Tue, 03 Mar 2015 23:06:53 GMT',
-48 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-48 silly registry.get     etag: '"57FWKVZWXA8GGLE64XJZ4M38L"',
-48 silly registry.get     'content-type': 'application/json',
-48 silly registry.get     'cache-control': 'max-age=60',
-48 silly registry.get     'content-length': '32215',
-48 silly registry.get     'accept-ranges': 'bytes',
-48 silly registry.get     via: '1.1 varnish',
-48 silly registry.get     age: '42',
-48 silly registry.get     'x-served-by': 'cache-atl6229-ATL',
-48 silly registry.get     'x-cache': 'HIT',
-48 silly registry.get     'x-cache-hits': '1',
-48 silly registry.get     'x-timer': 'S1425424013.482371,VS0,VE2',
-48 silly registry.get     vary: 'Accept',
-48 silly registry.get     'keep-alive': 'timeout=10, max=50',
-48 silly registry.get     connection: 'Keep-Alive' } ]
-49 silly addNameRange number 2 { name: 'karma-jasmine', range: '*', hasData: true }
-50 silly addNameRange versions [ 'karma-jasmine',
-50 silly addNameRange   [ '0.0.1',
-50 silly addNameRange     '0.0.2',
-50 silly addNameRange     '0.0.3',
-50 silly addNameRange     '0.1.0',
-50 silly addNameRange     '0.1.1',
-50 silly addNameRange     '0.1.2',
-50 silly addNameRange     '0.1.3',
-50 silly addNameRange     '0.1.4',
-50 silly addNameRange     '0.1.5',
-50 silly addNameRange     '0.2.0',
-50 silly addNameRange     '0.2.1',
-50 silly addNameRange     '0.2.2',
-50 silly addNameRange     '0.2.3',
-50 silly addNameRange     '0.3.0',
-50 silly addNameRange     '0.3.1',
-50 silly addNameRange     '0.3.2',
-50 silly addNameRange     '0.3.3',
-50 silly addNameRange     '0.3.4',
-50 silly addNameRange     '0.3.5' ] ]
-51 verbose addNamed [ 'karma-jasmine', '0.3.5' ]
-52 verbose addNamed [ '0.3.5', '0.3.5' ]
-53 silly lockFile b510234b-karma-jasmine-0-3-5 karma-jasmine@0.3.5
-54 verbose lock karma-jasmine@0.3.5 C:\Users\Smitha\AppData\Roaming\npm-cache\b510234b-karma-jasmine-0-3-5.lock
-55 http 404 https://registry.npmjs.org/karma-chrome-launcher--save-dev
-56 verbose headers { date: 'Tue, 03 Mar 2015 23:06:53 GMT',
-56 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-56 verbose headers   'content-type': 'application/json',
-56 verbose headers   'cache-control': 'max-age=0',
-56 verbose headers   'content-length': '52',
-56 verbose headers   'accept-ranges': 'bytes',
-56 verbose headers   via: '1.1 varnish',
-56 verbose headers   age: '0',
-56 verbose headers   'x-served-by': 'cache-atl6222-ATL',
-56 verbose headers   'x-cache': 'MISS',
-56 verbose headers   'x-cache-hits': '0',
-56 verbose headers   'x-timer': 'S1425424013.474796,VS0,VE110',
-56 verbose headers   'keep-alive': 'timeout=10, max=50',
-56 verbose headers   connection: 'Keep-Alive' }
-57 silly registry.get cb [ 404,
-57 silly registry.get   { date: 'Tue, 03 Mar 2015 23:06:53 GMT',
-57 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-57 silly registry.get     'content-type': 'application/json',
-57 silly registry.get     'cache-control': 'max-age=0',
-57 silly registry.get     'content-length': '52',
-57 silly registry.get     'accept-ranges': 'bytes',
-57 silly registry.get     via: '1.1 varnish',
-57 silly registry.get     age: '0',
-57 silly registry.get     'x-served-by': 'cache-atl6222-ATL',
-57 silly registry.get     'x-cache': 'MISS',
-57 silly registry.get     'x-cache-hits': '0',
-57 silly registry.get     'x-timer': 'S1425424013.474796,VS0,VE110',
-57 silly registry.get     'keep-alive': 'timeout=10, max=50',
-57 silly registry.get     connection: 'Keep-Alive' } ]
-58 silly lockFile 319c51d4-karma-chrome-launcher-save-dev karma-chrome-launcher--save-dev@
-59 silly lockFile 319c51d4-karma-chrome-launcher-save-dev karma-chrome-launcher--save-dev@
-60 silly lockFile ea1143b5--jasmine-karma-jasmine-0-3-5-tgz https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.3.5.tgz
-61 verbose lock https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.3.5.tgz C:\Users\Smitha\AppData\Roaming\npm-cache\ea1143b5--jasmine-karma-jasmine-0-3-5-tgz.lock
-62 verbose addRemoteTarball [ 'https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.3.5.tgz',
-62 verbose addRemoteTarball   'd6c7bce49f0747b59b557156502a28009a44055d' ]
-63 info retry fetch attempt 1 at 18:06:51
-64 verbose fetch to= C:\Perl64\bin\npm-192-uNr4VD39\registry.npmjs.org\karma-jasmine\-\karma-jasmine-0.3.5.tgz
-65 http GET https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.3.5.tgz
-66 http 200 https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.3.5.tgz
-67 silly lockFile ea1143b5--jasmine-karma-jasmine-0-3-5-tgz https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.3.5.tgz
-68 silly lockFile ea1143b5--jasmine-karma-jasmine-0-3-5-tgz https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.3.5.tgz
-69 silly lockFile b510234b-karma-jasmine-0-3-5 karma-jasmine@0.3.5
-70 silly lockFile b510234b-karma-jasmine-0-3-5 karma-jasmine@0.3.5
-71 silly lockFile a9316641-karma-jasmine karma-jasmine@
-72 silly lockFile a9316641-karma-jasmine karma-jasmine@
-73 error 404 404 Not Found: karma-chrome-launcher--save-dev
-73 error 404
-73 error 404 'karma-chrome-launcher--save-dev' is not in the npm registry.
-73 error 404 You should bug the author to publish it
-73 error 404 It was specified as a dependency of 'MiniProject1-Template'
-73 error 404
-73 error 404 Note that you can also install from a
-73 error 404 tarball, folder, or http url, or git url.
-74 error System Windows_NT 6.2.9200
-75 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "karma-jasmine" "karma-chrome-launcher--save-dev"
-76 error cwd C:\Users\Smitha\Desktop\DevOps\Milestone_2
-77 error node -v v0.10.35
-78 error npm -v 1.4.28
-79 error code E404
-80 verbose exit [ 1, true ]
+5 warn package.json karma-chrome-launcher@0.1.7 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'quick-check', null ]
+8 verbose cache add name=undefined spec="quick-check" args=["quick-check",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'quick-check',
+9 verbose parsed url   path: 'quick-check',
+9 verbose parsed url   href: 'quick-check' }
+10 silly lockFile 0372b578-quick-check quick-check
+11 verbose lock quick-check C:\Users\Smitha\AppData\Roaming\npm-cache\0372b578-quick-check.lock
+12 silly lockFile 0372b578-quick-check quick-check
+13 silly lockFile 0372b578-quick-check quick-check
+14 verbose addNamed [ 'quick-check', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile fc2dbeb4-quick-check quick-check@
+17 verbose lock quick-check@ C:\Users\Smitha\AppData\Roaming\npm-cache\fc2dbeb4-quick-check.lock
+18 silly addNameRange { name: 'quick-check', range: '*', hasData: false }
+19 verbose request where is /quick-check
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id 27f3865edb286ae0
+22 verbose url raw /quick-check
+23 verbose url resolving [ 'https://registry.npmjs.org/', './quick-check' ]
+24 verbose url resolved https://registry.npmjs.org/quick-check
+25 verbose request where is https://registry.npmjs.org/quick-check
+26 info trying registry request attempt 1 at 13:14:29
+27 http GET https://registry.npmjs.org/quick-check
+28 http 404 https://registry.npmjs.org/quick-check
+29 verbose headers { date: 'Sun, 08 Mar 2015 17:14:30 GMT',
+29 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 verbose headers   'content-type': 'application/json',
+29 verbose headers   'cache-control': 'max-age=0',
+29 verbose headers   'content-length': '52',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   age: '0',
+29 verbose headers   'x-served-by': 'cache-atl6233-ATL',
+29 verbose headers   'x-cache': 'MISS',
+29 verbose headers   'x-cache-hits': '0',
+29 verbose headers   'x-timer': 'S1425834870.766710,VS0,VE77',
+29 verbose headers   'keep-alive': 'timeout=10, max=50',
+29 verbose headers   connection: 'Keep-Alive' }
+30 silly registry.get cb [ 404,
+30 silly registry.get   { date: 'Sun, 08 Mar 2015 17:14:30 GMT',
+30 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 silly registry.get     'content-type': 'application/json',
+30 silly registry.get     'cache-control': 'max-age=0',
+30 silly registry.get     'content-length': '52',
+30 silly registry.get     'accept-ranges': 'bytes',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     age: '0',
+30 silly registry.get     'x-served-by': 'cache-atl6233-ATL',
+30 silly registry.get     'x-cache': 'MISS',
+30 silly registry.get     'x-cache-hits': '0',
+30 silly registry.get     'x-timer': 'S1425834870.766710,VS0,VE77',
+30 silly registry.get     'keep-alive': 'timeout=10, max=50',
+30 silly registry.get     connection: 'Keep-Alive' } ]
+31 silly lockFile fc2dbeb4-quick-check quick-check@
+32 silly lockFile fc2dbeb4-quick-check quick-check@
+33 error 404 404 Not Found: quick-check
+33 error 404
+33 error 404 'quick-check' is not in the npm registry.
+33 error 404 You should bug the author to publish it
+33 error 404 It was specified as a dependency of 'MiniProject1-Template'
+33 error 404
+33 error 404 Note that you can also install from a
+33 error 404 tarball, folder, or http url, or git url.
+34 error System Windows_NT 6.2.9200
+35 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "quick-check" "--save-dev"
+36 error cwd C:\Users\Smitha\Desktop\DevOps\Milestone_2
+37 error node -v v0.10.35
+38 error npm -v 1.4.28
+39 error code E404
+40 verbose exit [ 1, true ]
