@@ -12,20 +12,35 @@ Project Team Members:
 
 **Step 1: The ability to run unit tests, measure coverage, and report the results.**
 
+1] To run the unit tests, we have used Jasmine as our test framework and using PhantomJS as our testrunner. We are also using Istanbul to measure test coverage. The Gruntfile configuration can be seen below, where the Jasmine and Istanbul sections have been added.  
+
 ![alt Jenkins Git plugin](mile2_screenshot/gruntfile.png)
+
+2] We have written our test specifications in the test-spec.js.
+
+3] Below, we have run Istanbul. After running the tests included in the test-spec.js, we can see that the branch coverage is 75%.
 
 ![alt Jenkins Git plugin](mile2_screenshot/cov1.png)
 
-![alt Jenkins Git plugin](mile2_screenshot/cov2.png)
-
-![alt Jenkins Git plugin](mile2_screenshot/cov_html.png)
-
-![alt Jenkins Git plugin](mile2_screenshot/jasmine.png)
-
+4] To improve coverage, we have written random input based testing, as described in the next step.
 
 **Step 2: The ability to improve testing coverage using one of the techniques covered in class: constraint-based test generation, fuzzing, etc. You can use an existing tool or implement your own approach.**
 
+1] In the test-spec.js, the last two test cases are used to randomize our input. In one of the test cases, we are randomizing the string to be taken as input,and in the next test case, we have reversed the string and put it into our test case.
 
+2] These test cases have helped up increase our coverage to 100%.  
+
+![alt Jenkins Git plugin](mile2_screenshot/fuzzing.png)
+
+![alt Jenkins Git plugin](mile2_screenshot/jasmine_speclist.png)
+
+![alt Jenkins Git plugin](mile2_screenshot/jasmine_error5.png)
+
+3] Here we can see that by randomizing our input, one test case has failed which is reported as errors by Jasmine.
+
+4] Istanbul also provides an HTML format to display the coverage which can be seen below.
+
+![alt Jenkins Git plugin](mile2_screenshot/cov_html.png)
 
 
 
@@ -33,7 +48,7 @@ Project Team Members:
 ---------------------------
 **Step 3: The ability to run an existing static analysis tool on the source code (e.g. FindBugs, PMD, CheckStyle, NCover, Lint, etc.), process its results, and report its findings.**
 
-1] For this step, we have used jshint to run a static analysis on the source code. The grunt task to run jshint has been integrated on the Gruntfile as can be seen below. The task also specifies the names of the file that jshint has to run static analysis on. Additionally, the task also includes the command to report the findings of jshint to an xml file.
+1] For this step, we have used jshint to run a static analysis on the source code. The grunt task to run jshint has been integrated in the Gruntfile as can be seen below. The task also specifies the names of the file that jshint has to run static analysis on. Additionally, the task also includes the command to report the findings of jshint to an xml file.
 
 ![alt Jenkins Git plugin](mile2_screenshot/grunt_jshint.png)
 
@@ -58,7 +73,31 @@ Project Team Members:
 
 **Step 5: The ability to reject a commit if it fails a minimum testing criteria (e.g. failed test case, or less than 50% statement coverage) and analysis criteria (e.g. cannot commits that generate a particular FindBugs rule, such as "Method concatenates strings using + in a loop").**
 
-![alt Jenkins Git plugin](mile2_screenshot/jshint_validate.png)
+1] We are using Jenkins as our build system, and the plugins that we have used are Cobertura and Checkstyle.
 
-![alt Jenkins Git plugin](mile2_screenshot/jshint_report.png)
  
+![alt Jenkins Git plugin](mile2_screenshot/check_and_cober.png)
+
+2] We have configured Cobertura to fail the build when the brach coverage/conditional coverage is less than 60%. This can be seen below.
+
+![alt Jenkins Git plugin](mile2_screenshot/cober2.png)
+
+3] In one of our builds, the branch coverage was 50%, hence the build failed due to the configuration. Cobertura also displays a good coverage report on Jenkins. This can be seen below.
+
+![alt Jenkins Git plugin](mile2_screenshot/cobertura1.png)
+
+![alt Jenkins Git plugin](mile2_screenshot/cober3.png)
+
+4] We have the Checkstyle plugin to fail commits when we find high priority errors in the code. This can be seen in the configuration below. 
+
+![alt Jenkins Git plugin](mile2_screenshot/checkstyle.png)
+ 
+5] Checkstyle.png fails the build. As seen in the 'report-jshint-checkstyle.xml', we have 2 high priority errors. As seen in the screenshot, our threshold has been set to 1 and the build thus fails.
+
+![alt Jenkins Git plugin](mile2_screenshot/check4.png)
+
+![alt Jenkins Git plugin](mile2_screenshot/check5.png)
+
+6] Checkstyle also provides a good summary report on Jenkins as can be seen below.
+
+![alt Jenkins Git plugin](mile2_screenshot/check2.png)
