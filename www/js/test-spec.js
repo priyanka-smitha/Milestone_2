@@ -8,7 +8,11 @@ describe("Person Name", function() {
     var target = new ViewMyModel("Priyanka","Lovelace");
     expect(target.fullName()).toBe("Priyanka Lovelace");
   });
-	it("Computes wrongName based on lastName", function() {
+ });
+ 
+//Improving test coverage
+describe("Improving coverage", function() {
+it("Computes wrongName based on lastName", function() {
     var target = new ViewMyModel("Ada","Shankaran");
     expect(target.fullName()).toBe("Ada Shankaran");
   });
