@@ -1,5 +1,3 @@
-// var a
-// var x=y=z="example";
 //var regex = /^unclosed$;
 var ViewMyModel=function(first,last,email)
 {
