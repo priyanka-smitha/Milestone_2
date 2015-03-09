@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>1.598</version>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.ProjectMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:anonymous</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:smitha</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:anonymous</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:smitha</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:anonymous</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:smitha</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:anonymous</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:smitha</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:anonymous</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:smitha</permission>
+    <permission>hudson.model.Computer.Build:anonymous</permission>
+    <permission>hudson.model.Computer.Build:smitha</permission>
+    <permission>hudson.model.Computer.Configure:anonymous</permission>
+    <permission>hudson.model.Computer.Configure:smitha</permission>
+    <permission>hudson.model.Computer.Connect:anonymous</permission>
+    <permission>hudson.model.Computer.Connect:smitha</permission>
+    <permission>hudson.model.Computer.Create:anonymous</permission>
+    <permission>hudson.model.Computer.Create:smitha</permission>
+    <permission>hudson.model.Computer.Delete:anonymous</permission>
+    <permission>hudson.model.Computer.Delete:smitha</permission>
+    <permission>hudson.model.Computer.Disconnect:anonymous</permission>
+    <permission>hudson.model.Computer.Disconnect:smitha</permission>
+    <permission>hudson.model.Hudson.Administer:anonymous</permission>
+    <permission>hudson.model.Hudson.Administer:smitha</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:anonymous</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:smitha</permission>
+    <permission>hudson.model.Hudson.Read:anonymous</permission>
+    <permission>hudson.model.Hudson.Read:smitha</permission>
+    <permission>hudson.model.Hudson.RunScripts:anonymous</permission>
+    <permission>hudson.model.Hudson.RunScripts:smitha</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:anonymous</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:smitha</permission>
+    <permission>hudson.model.Item.Build:anonymous</permission>
+    <permission>hudson.model.Item.Build:smitha</permission>
+    <permission>hudson.model.Item.Cancel:anonymous</permission>
+    <permission>hudson.model.Item.Cancel:smitha</permission>
+    <permission>hudson.model.Item.Configure:anonymous</permission>
+    <permission>hudson.model.Item.Configure:smitha</permission>
+    <permission>hudson.model.Item.Create:anonymous</permission>
+    <permission>hudson.model.Item.Create:smitha</permission>
+    <permission>hudson.model.Item.Delete:anonymous</permission>
+    <permission>hudson.model.Item.Delete:smitha</permission>
+    <permission>hudson.model.Item.Discover:anonymous</permission>
+    <permission>hudson.model.Item.Discover:smitha</permission>
+    <permission>hudson.model.Item.Read:anonymous</permission>
+    <permission>hudson.model.Item.Read:smitha</permission>
+    <permission>hudson.model.Item.Workspace:anonymous</permission>
+    <permission>hudson.model.Item.Workspace:smitha</permission>
+    <permission>hudson.model.Run.Delete:anonymous</permission>
+    <permission>hudson.model.Run.Delete:smitha</permission>
+    <permission>hudson.model.Run.Update:anonymous</permission>
+    <permission>hudson.model.Run.Update:smitha</permission>
+    <permission>hudson.model.View.Configure:anonymous</permission>
+    <permission>hudson.model.View.Configure:smitha</permission>
+    <permission>hudson.model.View.Create:anonymous</permission>
+    <permission>hudson.model.View.Create:smitha</permission>
+    <permission>hudson.model.View.Delete:anonymous</permission>
+    <permission>hudson.model.View.Delete:smitha</permission>
+    <permission>hudson.model.View.Read:anonymous</permission>
+    <permission>hudson.model.View.Read:smitha</permission>
+    <permission>hudson.scm.SCM.Tag:anonymous</permission>
+    <permission>hudson.scm.SCM.Tag:smitha</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>false</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${ITEM_ROOTDIR}/workspace</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks>
+    <jdk>
+      <name>Java</name>
+      <home>C:\Program Files\Java\jdk1.7.0_40</home>
+      <properties/>
+    </jdk>
+  </jdks>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <slaves>
+    <slave>
+      <name>Slave1</name>
+      <description></description>
+      <remoteFS>C:\Users\Smitha\Desktop\DevOps</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.slaves.JNLPLauncher"/>
+      <label></label>
+      <nodeProperties/>
+      <userId>smitha</userId>
+    </slave>
+  </slaves>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>All</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>All</primaryView>
+  <slaveAgentPort>0</slaveAgentPort>
+  <label></label>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>
