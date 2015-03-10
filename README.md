@@ -32,11 +32,11 @@ Project Team Members:
 
 ![alt Jenkins Git plugin](mile2_screenshot/fuzzing.png)
 
+3] Here we can see that by randomizing our input, one test case has failed which is reported as errors by Jasmine.
+
 ![alt Jenkins Git plugin](mile2_screenshot/jasmine_speclist.png)
 
 ![alt Jenkins Git plugin](mile2_screenshot/jasmine_error5.png)
-
-3] Here we can see that by randomizing our input, one test case has failed which is reported as errors by Jasmine.
 
 4] Istanbul also provides a HTML format to display the coverage which can be seen below.
 
@@ -101,3 +101,5 @@ Project Team Members:
 6] Checkstyle also provides a good summary report on Jenkins as can be seen below.
 
 ![alt Jenkins Git plugin](mile2_screenshot/check2.png)
+
+The Jenkins configuration files are included in the code and are called config.xml and config_milestone2.xml
