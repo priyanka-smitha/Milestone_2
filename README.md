@@ -12,7 +12,7 @@ Project Team Members:
 
 **Step 1: The ability to run unit tests, measure coverage, and report the results.**
 
-1] To run the unit tests, we have used Jasmine as our test framework and using PhantomJS as our testrunner. We are also using Istanbul to measure test coverage. The Gruntfile configuration can be seen below, where the Jasmine and Istanbul sections have been added.  
+1] To run the unit tests, we have used Jasmine as our test framework and using PhantomJS as our testrunner. We are using Istanbul to measure test coverage. The Gruntfile configuration can be seen below, where the Jasmine and Istanbul sections have been added.  
 
 ![alt Jenkins Git plugin](mile2_screenshot/gruntfile.png)
 
@@ -22,13 +22,13 @@ Project Team Members:
 
 ![alt Jenkins Git plugin](mile2_screenshot/cov1.png)
 
-4] To improve coverage, we have written random input based testing, as described in the next step.
+4] To improve coverage, we have used random input based testing, as described in the next step.
 
 **Step 2: The ability to improve testing coverage using one of the techniques covered in class: constraint-based test generation, fuzzing, etc. You can use an existing tool or implement your own approach.**
 
-1] In the test-spec.js, the last two test cases are used to randomize our input. In one of the test cases, we are randomizing the string to be taken as input,and in the next test case, we have reversed the string and put it into our test case.
+1] In the test-spec.js, the last two test cases are used to randomize our input. In one of the test cases, we are randomizing the string to be taken as input,and in the next test case, we have reversed the string and fed it as input into our test case.
 
-2] These test cases have helped up increase our coverage to 100%.  
+2] These test cases have helped us increase coverage to 100%.  
 
 ![alt Jenkins Git plugin](mile2_screenshot/fuzzing.png)
 
@@ -38,7 +38,7 @@ Project Team Members:
 
 3] Here we can see that by randomizing our input, one test case has failed which is reported as errors by Jasmine.
 
-4] Istanbul also provides an HTML format to display the coverage which can be seen below.
+4] Istanbul also provides a HTML format to display the coverage which can be seen below.
 
 ![alt Jenkins Git plugin](mile2_screenshot/cov_html.png)
 
@@ -78,7 +78,7 @@ Project Team Members:
  
 ![alt Jenkins Git plugin](mile2_screenshot/check_and_cober.png)
 
-2] We have configured Cobertura to fail the build when the brach coverage/conditional coverage is less than 60%. This can be seen below.
+2] We have configured Cobertura to fail the build when the branch coverage/conditional coverage is less than 60%. This can be seen below.
 
 ![alt Jenkins Git plugin](mile2_screenshot/cober2.png)
 
@@ -88,11 +88,11 @@ Project Team Members:
 
 ![alt Jenkins Git plugin](mile2_screenshot/cober3.png)
 
-4] We have the Checkstyle plugin to fail commits when we find high priority errors in the code. This can be seen in the configuration below. 
+4] We have configured the Checkstyle plugin to fail the build when we find high priority errors in the code. This can be seen in the configuration below. 
 
 ![alt Jenkins Git plugin](mile2_screenshot/checkstyle.png)
  
-5] Checkstyle.png fails the build. As seen in the 'report-jshint-checkstyle.xml', we have 2 high priority errors. As seen in the screenshot, our threshold has been set to 1 and the build thus fails.
+5] As seen in the 'report-jshint-checkstyle.xml', we have 2 high priority errors. As seen in the screenshot, our threshold has been set to 1 and the build thus fails.
 
 ![alt Jenkins Git plugin](mile2_screenshot/check4.png)
 
